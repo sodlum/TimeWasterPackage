@@ -1,0 +1,10 @@
+<h2>{{title}}</h2>
+<input id="txt-height" type="number" [(ngModel)]="height" />
+<label for="txt-height">Height</label>
+<input id="txt-width" type="number" [(ngModel)]="width" />
+<label for="txt-width">Width</label>
+<input id="txt-mines" type="number" [(ngModel)]="mines" />
+<label for="txt-mines">Mines</label>
+<button type="button" (click)="startGame()">Start Game</button>
+<br />
+<button type="button" (click)="goBack()">Go Back</button>

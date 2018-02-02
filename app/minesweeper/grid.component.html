@@ -1,0 +1,8 @@
+<h2>{{title}}</h2>
+<h3>{{flags}} of {{Grid.Mines}} found</h3>
+<label>Highlight Uncovered Tiles</label>
+<input type="checkbox" [(ngModel)]="highlight" (change)="toggleHighlight()" />
+<br />
+<canvas #gridCanvas (click)="HandleClick($event, false)" (contextmenu)="HandleClick($event, true)"></canvas>
+<br />
+<button type="button" (click)="goBack()">Back</button>
